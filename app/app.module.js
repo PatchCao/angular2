@@ -8,12 +8,22 @@
           {
             path: 'heroes',
             component: app.HeroesComponent
+          },
+          {
+            path: 'dashborad',
+            component: app.DashboardComponent
+          },
+          {
+            path: '',
+            redirectTo: '/dashborad',
+            pathMatch: 'full'
           }
         ])
        ],
       declarations: [
         app.HeroDetailComponent,
         app.HeroesComponent,
+        app.DashboardComponent,
         app.AppComponent
        ],
        providers: [
