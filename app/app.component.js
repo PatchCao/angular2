@@ -11,8 +11,7 @@
         </nav>
         <router-outlet></router-outlet>
       `,
-      styles: [`
-      `]
+      styleUrls: ['app/app.component.css']
     })
     .Class({
       constructor: function() {

@@ -6,11 +6,18 @@
       styleUrls: ['app/heroes.component.css']
     })
     .Class({
-      constructor: [app.HeroService, function(service) {
+      constructor: [app.HeroService, ng.router.Router, function(service, router) {
         this.heroes = service.getHeros();
+        this.router = router;
         this.onSelect = function(hero) {
           this.selectedHero = hero;
         };
       }]
     });
+
+  app.HeroesComponent.prototype.ngOnInit = function() {
+    this.gotoDetail = function() {
+      this.router.navigate(['/detail', this.selectedHero.id]);
+    }
+  }
 })(window.app || (window.app = {}));

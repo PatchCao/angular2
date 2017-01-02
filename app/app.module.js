@@ -4,21 +4,7 @@
       imports: [
         ng.platformBrowser.BrowserModule,
         ng.forms.FormsModule,
-        ng.router.RouterModule.forRoot([
-          {
-            path: 'heroes',
-            component: app.HeroesComponent
-          },
-          {
-            path: 'dashboard',
-            component: app.DashboardComponent
-          },
-          {
-            path: '',
-            redirectTo: '/dashboard',
-            pathMatch: 'full'
-          }
-        ])
+        app.RoutingModule
        ],
       declarations: [
         app.HeroDetailComponent,
