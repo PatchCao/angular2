@@ -5,7 +5,8 @@
       selector: 'my-app',
       template:`
         <h1>{{title}}</h1>
-        <my-heroes></my-heroes>
+        <a routerLink="/heroes">Heroes</a>
+        <router-outlet></router-outlet>
       `,
       styles: [`
       `]

@@ -4,7 +4,12 @@
       imports: [
         ng.platformBrowser.BrowserModule,
         ng.forms.FormsModule,
-        ng.router.RouterModule
+        ng.router.RouterModule.forRoot([
+          {
+            path: 'heroes',
+            component: app.HeroesComponent
+          }
+        ])
        ],
       declarations: [
         app.HeroDetailComponent,
