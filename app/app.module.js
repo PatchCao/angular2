@@ -3,10 +3,12 @@
     ng.core.NgModule({
       imports: [
         ng.platformBrowser.BrowserModule,
-        ng.forms.FormsModule
+        ng.forms.FormsModule,
+        ng.router.RouterModule
        ],
       declarations: [
         app.HeroDetailComponent,
+        app.HeroesComponent,
         app.AppComponent
        ],
        providers: [
