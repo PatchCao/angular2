@@ -10,12 +10,12 @@
             component: app.HeroesComponent
           },
           {
-            path: 'dashborad',
+            path: 'dashboard',
             component: app.DashboardComponent
           },
           {
             path: '',
-            redirectTo: '/dashborad',
+            redirectTo: '/dashboard',
             pathMatch: 'full'
           }
         ])
